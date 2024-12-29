@@ -118,18 +118,4 @@ public class DepotView extends JFrame {
     public JButton getProcessButton() { return processButton; }
     public JButton getAddCustomerButton() { return addCustomerButton; }
     public JButton getAddParcelButton() { return addParcelButton; }
-
-    // Temporary main method for testing the GUI layout
-    public static void main(String[] args) {
-        // Run GUI code on Event Dispatch Thread
-        SwingUtilities.invokeLater(() -> {
-            DepotView view = new DepotView();
-            view.setVisible(true);
-            
-            // Add some dummy data for testing
-            view.currentProcessArea.setText("Test processing area\nNo customer being processed");
-            view.parcelListArea.setText("Test parcel list area\nNo parcels in depot");
-            view.customerQueueArea.setText("Test customer queue area\nNo customers in queue");
-        });
-    }
 } 
