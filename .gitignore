@@ -12,6 +12,7 @@ bin/
 
 # Logs
 *.log
+depot_log.txt
 
 # Package Files
 *.jar
